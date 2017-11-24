@@ -4,8 +4,7 @@ MAINTAINER tfront "tfront@msn.com"
 
 # install softwares
 RUN apt-get update
-RUN apt-get -y install openssh-server python python-pip python-opencv
+RUN apt-get -y install openssh-server python python-pip python-opencv vim net-tools iputils-ping
 RUN pip install scrapy tensorflow
 
-# 暴露80端口
 EXPOSE 22
